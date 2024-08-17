@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Your Profile</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body class="homepage is-preload">
+    
+
+        <!-- Header -->
+        <div id="page-wrapper">
+
+			
+
+					<!-- Nav -->
+						<nav>
+							
+        <div id="nav">
+        
+        <div id="lobby"><a href="first.html" >The Lobby</a></div>
+        <div id="share"><a href="no-sidebar.html" >ShareSquare</a></div>
+        <div id="neighborhood"><a href="profile.html" >Your Profile</a></div>
+         </div> <br><br>
+		 
+    
+						</nav>
+<center><a href=""><img src="images/logon.png" height="100px" width="100px"></a></center>
+				</div>
+				
+
+        <!-- Main User Profile Section -->
+        <section class="wrapper style1">
+            <div class="container">
+                <div class="row gtr-50 gtr-uniform">
+                    <!-- Left Side Options -->
+                    <div class="col-5 col-10-xsmall">
+                        <h2>User Profile</h2><br>
+                        <!-- Change Password Form -->
+                        <h3>Change Password</h3><br>
+                        <form method="post" action="change_password.php">
+                            <input type="password" name="new_password" id="new_password" placeholder="New Password" required /> <br>
+                            <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password" required /><br>
+                            <input type="submit" value="Change Password" class="primary" /><br><br>
+                        </form>
+
+                        <!-- Change Username Form -->
+                        <h3>Change Username</h3><br>
+                        <form method="post" action="change_username.php">
+                            <input type="text" name="new_username" id="new_username" placeholder="New Username" required /><br>
+                            <input type="submit" value="Change Username" class="primary" /><br><br>
+                        </form>
+
+                        <!-- Change Profile Picture Form -->
+                        <h3>Change Profile Picture</h3><br>
+                        <form method="post" action="change_profile_picture.php" enctype="multipart/form-data">
+                            <input type="file" name="profile_picture" id="profile_picture" accept="image/*" required /><br><br>
+                            <input type="submit" value="Change Profile Picture" class="primary" /><br><br>
+                        </form>
+
+                        <!-- Write Short Bio Form -->
+                        <h3>Write Short Bio</h3><br>
+                        <form method="post" action="write_bio.php">
+                            <textarea name="bio" id="bio" rows="4" placeholder="Write your bio here" required></textarea><br>
+                            <input type="submit" value="Save Bio" class="primary" />
+                        </form>
+                    </div>
+
+                    <!-- Right Side Profile Display -->
+                   
+<div class="col-7 col-12-xsmall">
+    <div class="profile-box">
+        <!-- Display Circular Profile Picture -->
+        <div class="profile-picture-container">
+            <img src="images/funky.jpg" alt="Profile Picture" class="circular-profile-picture" /><br><br>
+        </div><br>
+            
+        <!-- Display Username -->
+        
+    </div>
+    <center><h2>Username</h2></center>
+    <center><h3>Bio: Hi! User here</h3></center>
+    
+</div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <div id="footer">
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <section class="contact">
+                            <header>
+                                <h3>Want to know more about us?</h3>
+                            </header>
+                            <p>We can connect here:</p>
+                            <ul class="icons">
+                                <li><a href="#"><img width="48" height="48" src="https://img.icons8.com/doodle/48/facebook-new.png" alt="facebook-new"/></a></li>
+                                <li><a href="#"><img width="48" height="48" src="https://img.icons8.com/doodle/48/instagram-new.png" alt="instagram-new"/></a></li>
+                                <li><a href="#"><img width="48" height="48" src="https://img.icons8.com/plasticine/100/discord.png" alt="discord"/></a></li>
+                                <li><a href="#"><img width="48" height="48" src="https://img.icons8.com/doodle/48/linkedin--v2.png" alt="linkedin--v2"/></span></a></li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
